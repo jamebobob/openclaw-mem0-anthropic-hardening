@@ -17,7 +17,7 @@ zero (Anthropic bills actual output tokens, not max_tokens).
 
 Location: dist/oss/index.mjs line ~277 in AnthropicLLM.generateResponse()
 
-Written by Eve (the target OpenClaw agent) after diagnosing the issue in
+Written by the target OpenClaw agent after diagnosing the issue in
 live gateway logs. Self-audited: confirmed exactly 1 match, AnthropicLLM
 only, no other LLM classes affected.
 

@@ -86,7 +86,7 @@ All notable changes to these patches are documented here.
 
 ### v1 - 2026-03-15 (current)
 
-- Written by Eve (the target agent) after diagnosing truncated memory
+- Written by the target agent after diagnosing truncated memory
   action responses in live gateway logs.
 - Bumps AnthropicLLM.generateResponse() max_tokens from 4096 to 8192.
 - Same bug class as Mintplex-Labs/anything-llm#5039 (hardcoded 4096

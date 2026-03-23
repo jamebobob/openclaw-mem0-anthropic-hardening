@@ -1,5 +1,7 @@
 # openclaw-mem0-anthropic-hardening
 
+> **Note:** These patches are now incorporated in the [mem0-vigil](https://github.com/jamebobob/mem0-vigil) fork as native commits. This repo remains as documentation of the hardening rationale and individual patch details. For deployment, use the fork.
+
 Production hardening patches for the `@mem0/openclaw-mem0` plugin (v0.1.2) when using Anthropic models as the extraction LLM.
 
 The official plugin works well with OpenAI models but has several silent failure modes when paired with Anthropic's API. These patches fix all of them.
@@ -140,7 +142,7 @@ This code went through 8 rounds of independent audit before deployment:
 
 - 6 rounds by Claude Opus (prompt-level source code verification against the actual plugin)
 - 1 round by Claude Code (automated review with file access)
-- 1 round by the target agent (Eve) with runtime access to the live system
+- 1 round by the target agent (the live assistant) with runtime access to the live system
 
 See [CHANGELOG.md](CHANGELOG.md) for what each round found.
 
@@ -155,7 +157,7 @@ See [CHANGELOG.md](CHANGELOG.md) for what each round found.
 ## Credits
 
 Built by [@jamebobob](https://github.com/jamebobob) + Claude Opus.
-max_tokens patch and runtime debugging by Eve (the target OpenClaw agent).
+max_tokens patch and runtime debugging by the target OpenClaw agent.
 JSON resilience approach inspired by [1960697431/openclaw-mem0](https://github.com/1960697431/openclaw-mem0).
 
 ## License
