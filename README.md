@@ -1,6 +1,6 @@
 # openclaw-mem0-anthropic-hardening
 
-> **Note:** These patches are now incorporated in the [mem0-vigil](https://github.com/jamebobob/mem0-vigil) fork as native commits. This repo remains as documentation of the hardening rationale and individual patch details. For deployment, use the fork.
+> **Note:** These patches are now incorporated in the [mem0-vigil-recall](https://github.com/jamebobob/mem0-vigil-recall) fork as native commits. This repo remains as documentation of the hardening rationale and individual patch details. For deployment, use the fork.
 
 Production hardening patches for the `@mem0/openclaw-mem0` plugin (v0.1.2) when using Anthropic models as the extraction LLM.
 
